@@ -1,18 +1,17 @@
-import ReactDOM from 'react-dom/client'; //check this to confirm the correct path
-// required imports to set up application routing behavior
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'; //check this to confirm the correct path
+import ReactDOM from 'react-dom/client'
+// Bringing in the required imports from 'react-router-dom' to set up application routing behavior
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css' //might change this
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
-import Portfolio from './pages/Portfolio'; //was blog
-import Resume from './pages/Resume'; //added this
+import Portfolio from './pages/Portfolio';
 
-// The accessible routes, and which components respond to each URL
+// Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
     path: '/',
@@ -28,16 +27,12 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: '/Portfolio', // was blog
-        element: <Blog />,
+        path: '/Portfolio',
+        element: <Portfolio />,
       },
       {
         path: '/Contact',
         element: <Contact />,
-      },
-      {
-        path: '/Resume',
-        element: <Resume />, // added this
       },
     ],
   },

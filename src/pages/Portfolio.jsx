@@ -1,7 +1,7 @@
-export default function Blog() {
+export default function Portfolio() {
   return (
     <div>
-      <h1> My Blog Page</h1>
+      <h1> My Portfolio Blog Page</h1>
       <p>
         The Phoenix.
       </p>
