@@ -1,0 +1,10 @@
+export default function Resume() {
+    return (
+      <div>
+        <h1>Resume Page</h1>
+        <p>
+          How many pages do I have to write stories on?.
+        </p>
+      </div>
+    );
+  }
