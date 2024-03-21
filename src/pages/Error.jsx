@@ -7,7 +7,7 @@ export default function ErrorPage() {
   return (
     <div id="error-page">
       <h1>Oops!</h1>
-      <p>You may have taken a wrong turn.</p>
+      <p>You may have taken a wrong turn, smash that back button.</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>

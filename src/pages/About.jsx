@@ -1,9 +1,9 @@
 export default function About() {
     return (
       <div>
-        <h1>About Page</h1>
+        <h1>About Me</h1>
         <p>
-          How many pages do I have to write stories on?.
+          Insert the story of the phoenix.
         </p>
       </div>
     );

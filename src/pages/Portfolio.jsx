@@ -1,9 +1,9 @@
 export default function Portfolio() {
   return (
     <div>
-      <h1> My Portfolio Blog Page</h1>
+      <h1> Check Out My Portfolio</h1>
       <p>
-        The Phoenix.
+        Insert 6 projects with titles, links and repos.
       </p>
     </div>
   );
