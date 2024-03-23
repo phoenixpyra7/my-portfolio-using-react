@@ -12,8 +12,15 @@
   justify-content: space-between;
 }
 
-main {
+.main {
   height: 90vh;
+}
+
+.message-box {
+  display: flex;
+  height: 45px;
+  width: 900px;
+  text-align: center;
 }
 
 

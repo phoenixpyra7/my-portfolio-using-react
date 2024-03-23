@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
   // add the image style from the Home page
 import homeImage from "./assets/images/Shutterstockphoenix.png";
 import bgImage from "./assets/images/image2.png";
+import Card from "./components/Card";
 
 
 
@@ -44,6 +45,8 @@ function App() {
     <div className="App" style={imageStyle}>
       <Nav />
       <main className="mx-3">
+      <Card />
+
       {/* <div> */}
       {/* Think I should remove the value so its consumed after submit */}
     {/* <input onBlur={handleBlur}  id="name" name= "name" /> 

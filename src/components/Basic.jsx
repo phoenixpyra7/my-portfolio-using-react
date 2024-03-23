@@ -10,7 +10,7 @@ const Basic = () => (
     <h3>Fill out this form to send me a message.</h3>
     <Formik
     // I want to remove password
-      initialValues={{ email: '', password: '' }}
+      initialValues={{ email: '', name: '', message: ''}}
       validate={values => {
         const errors = {};
         if (!values.email) {
@@ -49,13 +49,29 @@ const Basic = () => (
           />
           {errors.email && touched.email && errors.email}
           <input
+            type="text"
+            name="name"
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={values.name}
+          />
+          {errors.name && touched.name && errors.name}
+          <textarea
+          className="form-control message-box"
+            name="message"
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={values.message}
+          />
+          {errors.message && touched.message && errors.message}
+          {/* <input
             type="password"
             name="password"
             onChange={handleChange}
             onBlur={handleBlur} // when mouse leaves
             value={values.password}
           />
-          {errors.password && touched.password && errors.password}
+          {errors.password && touched.password && errors.password} */}
           <button type="submit" disabled={isSubmitting}>
             Submit
           </button>

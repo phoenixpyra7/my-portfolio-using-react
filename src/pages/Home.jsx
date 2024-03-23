@@ -1,11 +1,13 @@
+
 export default function Home() {
   return (
     <div>
-      <h1>Sara (Seven) Neubert</h1>
+      <h1>Sara Neubert</h1>
       <br></br>
-
+      <br></br>
+      <br></br>
       <div>
-        <p>Insert a photo and an awesome quote.</p>
+        <p>“Ready must thou be to burn thyself in thine own flame; how couldst thou become new if thou have not first become ashes!” — Friedrich Nietzsche</p>
       </div>
     </div>
   );
