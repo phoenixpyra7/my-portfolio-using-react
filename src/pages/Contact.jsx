@@ -20,7 +20,7 @@ export default function Contact() {
     </div> */}
       <Basic />
       <p>
-        Enter your name, email, and a message.
+        Please enter your name, email, and a message.
       </p>
     </div>
   );

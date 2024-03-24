@@ -1,8 +1,7 @@
 export default function Footer() {
- 
-
- 
   return (
-    <footer>Created and designed by Seven</footer>
-  )
+    <footer>
+      <h2>Created and designed by Seven</h2>
+    </footer>
+  );
 }
