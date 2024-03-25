@@ -7,7 +7,7 @@ const Basic = () => (
     <br></br>
     <br></br>
     <br></br>
-    <h3>Fill out this form to send me a message.</h3>
+    <h5>Please enter your email, your name and a message.</h5>
     <Formik
     // I want to remove password
       initialValues={{ email: '', name: '', message: ''}}

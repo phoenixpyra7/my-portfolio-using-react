@@ -8,7 +8,7 @@ import Card from '../components/Card';
 export default function Contact() {
   return (
     <div>
-      <h1>Contact Me</h1>
+      <h2>Contact Me</h2>
       
       {/* <div> */}
       {/* Think I should remove the value so its consumed after submit */}
@@ -19,9 +19,6 @@ export default function Contact() {
     {/* <input onBlur={handleBlur} id="password" name= "password" />
     </div> */}
       <Basic />
-      <p>
-        Please enter your name, email, and a message.
-      </p>
     </div>
   );
 }
