@@ -12,18 +12,28 @@
   justify-content: space-between;
 }
 
-.main {
-  height: 90vh;
+main {
+  height: 70vh;
+}
+
+#home-quote {
+  margin-top: 13vh;
+  margin-inline: 13vw;
 }
 
 .message-box {
   display: flex;
-  height: 45px;
+  height: 20vh;
+  margin-inline: auto;
+  margin-block: 5vh;
   width: 900px;
   text-align: center;
 }
 
-
+.about-me {
+  margin-inline: 13vw;
+  margin-top: 15vh;
+}
 
 /* 
 .logo {
@@ -53,6 +63,22 @@
     animation: logo-spin infinite 20s linear;
   }
 } */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 10vw;
+}
+
+form input {
+    width: 25%;
+    margin-inline: auto;
+}
+
+form button {
+  margin-inline: auto;
+  width: 10%;
+}
 
 .card {
   padding: 2em;

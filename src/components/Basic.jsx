@@ -16,7 +16,7 @@ const Basic = () => (
         if (!values.email) {
           errors.email = 'Required';
         } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3,}$/i.test(values.email)
         ) {
           errors.email = 'Invalid email address';
         }
@@ -43,6 +43,7 @@ const Basic = () => (
           <input
             type="email"
             name="email"
+            placeholder='email...'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
@@ -51,6 +52,7 @@ const Basic = () => (
           <input
             type="text"
             name="name"
+            placeholder='name...'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.name}
