@@ -9,7 +9,7 @@ const Basic = () => (
     <br></br>
     <h5>Please enter your email, your name and a message.</h5>
     <Formik
-    // I want to remove password
+    // I removed password and created name and message fields
       initialValues={{ email: '', name: '', message: ''}}
       validate={values => {
         const errors = {};

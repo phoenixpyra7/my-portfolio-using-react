@@ -5,12 +5,30 @@
   text-align: center;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #585757;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ec0505;
+}
+
 h1 {
   font-size: 5rem;
   font-feature-settings: "abvf";
   font-family: 'Cormorant', serif;
   text-shadow: 4px 4px 8px #000000;
-  color: hsl(185, 92%, 64%);
+  color: hsla(185, 92%, 64%, 0.581);
  
 }
 h2 {
@@ -18,12 +36,20 @@ h2 {
   font-feature-settings: "abvf";
   font-family: 'Cormorant', serif;
   text-shadow: 4px 4px 8px #000000;
-  color: hsl(185, 92%, 64%);
+  color: hsla(185, 92%, 64%, 0.766);
+}
+h3 {
+  font-size: 1.5rem;
+  font-feature-settings: "abvf";
+  /* font-family: 'Cormorant', serif; */
+  text-shadow: 4px 4px 8px #000000;
+  color: hsla(275, 100%, 58%, 0.942);
 }
 
 h5 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-shadow: 4px 4px 8px #000000;
+  color: rgb(80, 214, 111);
 }
 
 .App {
@@ -34,7 +60,8 @@ h5 {
 }
 
 main {
-  height: 70vh;
+  /* height: 70vh */
+  height: 100vh;
 }
 
 #home-quote {
@@ -47,6 +74,58 @@ main {
   font-family: 'Cormorant', serif;
   text-shadow: 6px 6px 10px #000000;
 }
+.projectIcon {
+  width: 300px;
+  flex: 0 1 calc(33.33% - 13px); 
+}
+
+.projectIcon img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projects {
+  columns: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 2vw;
+}
+.projectLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* unvisited link */
+a:link {
+  color: rgb(255, 200, 0);
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
 .resume-text {
   margin-top: 13vh;
   margin-inline: auto;
@@ -87,6 +166,11 @@ form input {
 form button {
   margin-inline: auto;
   width: 10%;
+  border-radius: 8px;
+  background-color: rgba(170, 101, 240, 0.77);
+  /* text-decoration: underline; */
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .card {
