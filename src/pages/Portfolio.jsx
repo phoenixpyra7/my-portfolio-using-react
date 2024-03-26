@@ -1,6 +1,6 @@
 
 import snPortfolio from "../assets/images/snportfolio.png";
-import svgLogo from "../assets/images/svgLogo.png";
+import svgLogo from "../assets/images/svglogo.png";
 import employeeTracker from "../assets/images/employeetracker.png";
 import eCommerce from "../assets/images/ecommerce1.png";
 import socialMedia from "../assets/images/socialmedia1.png";
