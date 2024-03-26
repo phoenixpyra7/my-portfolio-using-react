@@ -1,4 +1,3 @@
-
 import snPortfolio from "../assets/images/snportfolio.png";
 import svgLogo from "../assets/images/svglogo.png";
 import employeeTracker from "../assets/images/employeetracker.png";
@@ -13,7 +12,8 @@ const projects = [
       "This is a simple command-line interface CMS (content management system) for a company's employee database. It allows it's user to view all employees, roles and departments, as well as add new employee's, create roles and departments or simply update a current employee's role.",
     image: employeeTracker,
     github: "https://github.com/phoenixpyra7/employee-tracker",
-    deployed: "https://www.awesomescreenshot.com/video/25681075?key=cd0510c3e42eeef5b647b1b9c3c8b830",
+    deployed:
+      "https://www.awesomescreenshot.com/video/25681075?key=cd0510c3e42eeef5b647b1b9c3c8b830",
   },
   {
     title: "Sara Neubert's Portfolio",
@@ -29,7 +29,8 @@ const projects = [
       "This is an API for social networking. Users can add and delete friends, share their thoughts and react to their friends thoughts. This application uses Express.js, MongoDB and Mongoose.",
     image: socialMedia,
     github: "https://github.com/phoenixpyra7/social-network-api-using-nosql",
-    deployed: "https://www.awesomescreenshot.com/video/25864816?key=0af7602b2f0c740bcbdb75212ab9ea2b",
+    deployed:
+      "https://www.awesomescreenshot.com/video/25864816?key=0af7602b2f0c740bcbdb75212ab9ea2b",
   },
   {
     title: "SVG Logo Maker",
@@ -37,7 +38,8 @@ const projects = [
       "This SVG logo generator allows you to select from 1-3 characters, select a shape (square, circle or triangle), and select the shape color and font color. The generated logo will then be saved with the title comprised of the characters which were used to create it.",
     image: svgLogo,
     github: "https://github.com/phoenixpyra7/svg-logo-maker",
-    deployed: "https://www.awesomescreenshot.com/video/24002555?key=570364ce38a77c88019ee5cabac4b364",
+    deployed:
+      "https://www.awesomescreenshot.com/video/24002555?key=570364ce38a77c88019ee5cabac4b364",
   },
 
   {
@@ -46,14 +48,16 @@ const projects = [
       "This is a functional Express.js API with Sequelize for database management. Once you set up and run the API locally, you can interact with it using Insomnia or HTTPie , and perform CRUD operations.",
     image: eCommerce,
     github: "https://github.com/phoenixpyra7/orm-e-commerce-back-end",
-    deployed: "https://www.awesomescreenshot.com/video/24586854?key=b578152c7df7705b97e58c7cb1f25c44",
+    deployed:
+      "https://www.awesomescreenshot.com/video/24586854?key=b578152c7df7705b97e58c7cb1f25c44",
   },
   {
     title: "Progressive Web App",
     description:
       "This is a text editor application that runs in the browser and can also function while offline. It can be saved as an icon on the desktop. It has a number of data persistence techniques that serve as redundancy in case one of the options are not supported by the browser.",
     image: proWebApp,
-    github: "https://github.com/phoenixpyra7/pwa-progressive-web-app-text-editor",
+    github:
+      "https://github.com/phoenixpyra7/pwa-progressive-web-app-text-editor",
     deployed: "https://fast-chamber-67222-d483a0469c0d.herokuapp.com/",
   },
 ];
@@ -67,12 +71,12 @@ export default function Portfolio() {
           <div className="projectIcon" key={index}>
             <h3>{project.title}</h3>
             <img src={project.image} alt={project.title} />
-            <div className= "infoCard">
-            <p>{project.description}</p>
-            <div className="projectLinks">
-              <a href={project.github}>GitHub</a>
-              <a href={project.deployed}>Deployed Link or Video</a>
-             </div> 
+            <div className="infoCard">
+              <p>{project.description}</p>
+              <div className="projectLinks">
+                <a href={project.github}>GitHub</a>
+                <a href={project.deployed}>Deployed Link or Video</a>
+              </div>
             </div>
           </div>
         ))}

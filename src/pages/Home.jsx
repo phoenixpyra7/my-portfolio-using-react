@@ -1,4 +1,3 @@
-
 export default function Home() {
   return (
     <div>
@@ -7,9 +6,12 @@ export default function Home() {
       <br></br>
       <br></br>
       <div>
-        <p id="home-quote">“Ready must thou be to burn thyself in thine own flame; how couldst thou become new if thou have not first become ashes!” - Friedrich Nietzsche</p>
+        <p id="home-quote">
+          “Ready must thou be to burn thyself in thine own flame; how couldst
+          thou become new if thou have not first become ashes!” - Friedrich
+          Nietzsche
+        </p>
       </div>
     </div>
   );
 }
-

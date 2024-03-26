@@ -1,5 +1,4 @@
-
-import { Formik } from 'formik';
+import { Formik } from "formik";
 
 const Basic = () => (
   <div>
@@ -9,16 +8,16 @@ const Basic = () => (
     <br></br>
     <h5>Please enter your email, your name and a message.</h5>
     <Formik
-    // I removed password and created name and message fields
-      initialValues={{ email: '', name: '', message: ''}}
-      validate={values => {
+      // I removed password and created name and message fields
+      initialValues={{ email: "", name: "", message: "" }}
+      validate={(values) => {
         const errors = {};
         if (!values.email) {
-          errors.email = 'Required';
+          errors.email = "Required";
         } else if (
           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3,}$/i.test(values.email)
         ) {
-          errors.email = 'Invalid email address';
+          errors.email = "Invalid email address";
         }
         return errors;
       }}
@@ -43,7 +42,7 @@ const Basic = () => (
           <input
             type="email"
             name="email"
-            placeholder='email...'
+            placeholder="email..."
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
@@ -52,14 +51,14 @@ const Basic = () => (
           <input
             type="text"
             name="name"
-            placeholder='name...'
+            placeholder="name..."
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.name}
           />
           {errors.name && touched.name && errors.name}
           <textarea
-          className="form-control message-box"
+            className="form-control message-box"
             name="message"
             onChange={handleChange}
             onBlur={handleBlur}
