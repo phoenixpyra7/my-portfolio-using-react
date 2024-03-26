@@ -67,10 +67,12 @@ export default function Portfolio() {
           <div className="projectIcon" key={index}>
             <h3>{project.title}</h3>
             <img src={project.image} alt={project.title} />
+            <div className= "infoCard">
             <p>{project.description}</p>
             <div className="projectLinks">
               <a href={project.github}>GitHub</a>
               <a href={project.deployed}>Deployed Link or Video</a>
+             </div> 
             </div>
           </div>
         ))}

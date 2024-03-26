@@ -83,6 +83,7 @@ main {
   width: 300px;
   height: 200px;
   object-fit: cover;
+  margin-bottom: 1vh;
 }
 
 .projects {
@@ -94,6 +95,15 @@ main {
   max-height: 70vh;
   overflow-y: auto;
   padding-right: 2vw;
+}
+.infoCard {
+  background-color: rgba(37, 32, 43, 0.556);
+  border-radius: 8px;
+  text-align: center;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .projectLinks {
   display: flex;
@@ -107,12 +117,12 @@ a {
 }
 /* unvisited link */
 a:link {
-  color: rgb(255, 200, 0);
+  color: rgb(255, 200, 0)
 }
 
 /* visited link */
 a:visited {
-  color: green;
+  color: rgb(255, 200, 0)
 }
 
 /* mouse over link */
@@ -143,6 +153,12 @@ a:active {
   margin-block: 5vh;
   width: 900px;
   text-align: center;
+  background-color:#33457754;
+}
+
+.avatar {
+  height: 240px;
+  width: 200px;
 }
 
 .about-me {
@@ -161,6 +177,12 @@ form {
 form input {
     width: 25%;
     margin-inline: auto;
+    background-color:#33457754;
+    color: rgb(255, 253, 253);
+}
+
+form input::placeholder {
+  color: rgb(216, 216, 216);
 }
 
 form button {
