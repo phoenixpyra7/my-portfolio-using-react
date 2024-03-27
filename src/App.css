@@ -1,3 +1,5 @@
+/* I had so much fun getting to utilize CSS again, I did not try an compress the classes with this project. */
+
 #root {
   max-width: 1280px;
   margin: 0;
@@ -22,10 +24,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #ec0505;
 }
+
+/* this is for the nav bar text */
 .nav-item {
   font-weight: 600;
 }
 
+/* these are the heading styles */
 h1 {
   font-size: 5rem;
   font-feature-settings: "abvf";
@@ -33,6 +38,7 @@ h1 {
   text-shadow: 4px 4px 8px #000000;
   color: hsla(185, 92%, 64%, 0.581);
 }
+
 h2 {
   font-size: 3rem;
   font-feature-settings: "abvf";
@@ -40,6 +46,7 @@ h2 {
   text-shadow: 4px 4px 8px #000000;
   color: hsla(185, 92%, 64%, 0.766);
 }
+
 h3 {
   font-size: 1.5rem;
   font-feature-settings: "abvf";
@@ -57,18 +64,7 @@ h5 {
   color: rgb(32, 140, 198);
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
-}
-
-main {
-  /* height: 70vh */
-  height: 100vh;
-}
-
+/* this is for the home page */
 #home-quote {
   background-color: rgba(37, 32, 43, 0.556);
   border-radius: 50px;
@@ -82,6 +78,8 @@ main {
   text-shadow: 6px 6px 10px #000000;
   color: rgb(255, 177, 52);
 }
+
+/* this is for the projects page */
 .projectIcon {
   width: 300px;
   flex: 0 1 calc(33.33% - 13px);
@@ -106,6 +104,7 @@ main {
   /* color: rgb(255, 177, 52); */
   color: rgb(32, 140, 198);
 }
+
 .infoCard {
   background-color: rgba(37, 32, 43, 0.556);
   border-radius: 8px;
@@ -115,23 +114,26 @@ main {
   flex-direction: column;
   justify-content: space-around;
 }
+
 .projectLinks {
   display: flex;
   justify-content: center;
   gap: 20px;
   font-weight: bold;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
-/* unvisited link */
+
+/* unvisited link, using same color as visited to avoid refresh issues */
 a:link {
   /* color: rgb(255, 200, 0); */
   color: hsla(275, 100%, 58%, 0.942);
 }
 
-/* visited link */
+/* visited link,, using same color as unvisited to avoid refresh issues */
 a:visited {
   /* color: rgb(255, 200, 0); */
   color: hsla(275, 100%, 58%, 0.942);
@@ -147,6 +149,7 @@ a:active {
   color: blue;
 }
 
+/*  this is for the resume page */
 .resume-text {
   margin-top: 13vh;
   margin-inline: auto;
@@ -159,17 +162,7 @@ a:active {
   border-radius: 8px;
   color: rgb(32, 140, 198);
 }
-
-.message-box {
-  display: flex;
-  height: 20vh;
-  margin-inline: auto;
-  margin-block: 5vh;
-  width: 900px;
-  text-align: center;
-  background-color: #33457754;
-}
-
+/* this is for the about me page */
 .avatar {
   height: 240px;
   width: 200px;
@@ -186,7 +179,7 @@ a:active {
   text-shadow: 4px 4px 8px #000000;
   color: rgb(76, 170, 98);
 }
-
+/* this is for the contact page */
 form {
   display: flex;
   flex-direction: column;
@@ -214,10 +207,17 @@ form button {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card {
-  padding: 2em;
+.message-box {
+  display: flex;
+  height: 20vh;
+  margin-inline: auto;
+  margin-block: 5vh;
+  width: 900px;
+  text-align: center;
+  background-color: #33457754;
 }
 
+/* this is for the footer */
 footer {
   /* font-family: cursive; */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -236,6 +236,24 @@ footer {
 .seven3 {
   border-radius: 8px;
   margin-left: 10px;
+}
+
+/* Misc */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+main {
+  /* height: 70vh */
+  height: 100vh;
+}
+
+.card {
+  padding: 2em;
 }
 
 .read-the-docs {

@@ -1,4 +1,5 @@
 // declared an object called styles for card and heading styles
+//Decided not to use card at this time. keeping if change mind.
 
 const styles = {
   card: {

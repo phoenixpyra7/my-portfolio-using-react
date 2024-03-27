@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 
-// Define the accessible routes, and which components respond to which URL
+// Defined the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
     path: "/",

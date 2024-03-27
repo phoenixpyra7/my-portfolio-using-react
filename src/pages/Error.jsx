@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom";
-
+//This is the error page, created a custom error message to let the user know how to get back.
 export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);

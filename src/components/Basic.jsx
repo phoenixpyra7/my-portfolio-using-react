@@ -1,5 +1,6 @@
 import { Formik } from "formik";
 
+// using formik to create the forms for the contact page. customized to fir the need of forms needed.
 const Basic = () => (
   <div>
     <br></br>
@@ -64,6 +65,7 @@ const Basic = () => (
             onBlur={handleBlur}
             value={values.message}
           />
+          /* removed password */
           {errors.message && touched.message && errors.message}
           {/* <input
             type="password"

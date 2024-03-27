@@ -2,6 +2,8 @@ import gitHubIcon2 from "../assets/images/githubicon2.png";
 import linkedInIcon from "../assets/images/linkedinicon.png";
 import seven3 from "../assets/images/seven3.png";
 
+
+// Designed footer to include customer made icon.
 export default function Footer() {
   return (
     <footer className="footer">

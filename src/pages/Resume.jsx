@@ -1,3 +1,5 @@
+
+// For the resume page, I created link within the word "here" where if the user clicks the word it takes them to download the resume.
 export default function Resume() {
   return (
     <div>

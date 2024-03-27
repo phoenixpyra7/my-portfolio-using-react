@@ -1,5 +1,6 @@
 import avatar1 from "../assets/images/avatar1.png";
 
+// created an about me section with an image called avatar for ease of naming a class and separating it from the project images.
 export default function About() {
   return (
     <div>

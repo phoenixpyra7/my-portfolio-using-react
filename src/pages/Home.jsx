@@ -1,3 +1,6 @@
+
+//Since the home page is the default page by industry standard, I added a quote which kickstarts the theme and prefaces the about me page.
+
 export default function Home() {
   return (
     <div>

@@ -1,8 +1,7 @@
 import Basic from "../components/Basic";
 
-// const handleBlur = (e) => {
-//   console.log(e);
-// };
+// This is where Formik comes in for the contact page, used Basic. 
+
 export default function Contact() {
   return (
     <div>

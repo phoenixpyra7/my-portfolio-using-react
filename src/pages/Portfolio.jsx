@@ -5,6 +5,8 @@ import eCommerce from "../assets/images/ecommerce1.png";
 import socialMedia from "../assets/images/socialmedia1.png";
 import proWebApp from "../assets/images/prowebapp.png";
 
+
+// Loop through of the projects and display them in the portfolio page.
 const projects = [
   {
     title: "Employee Tracker",
@@ -61,7 +63,8 @@ const projects = [
     deployed: "https://fast-chamber-67222-d483a0469c0d.herokuapp.com/",
   },
 ];
-
+// some projects do not have a live link so I advised the user  that the link is either the deployed link or video.
+//project links and images (icons) sit within the projects array
 export default function Portfolio() {
   return (
     <div>

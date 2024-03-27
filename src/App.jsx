@@ -1,3 +1,4 @@
+// instead of using a generic theme I started with the quartz theme on bootswatch then customized it from there
 import "bootswatch/dist/quartz/bootstrap.min.css";
 import "./App.css";
 import { Outlet, useLocation } from "react-router-dom";
@@ -6,15 +7,12 @@ import Footer from "./components/Footer";
 // add the image style from the Home page
 import homeImage from "./assets/images/Shutterstockphoenix.png";
 import bgImage from "./assets/images/image2.png";
-import Card from "./components/Card";
+// import Card from "./components/Card";
 
-// const handleBlur = (e) => {
-//   console.log(e);
-// };
 
 function App() {
   // The Outlet component will swap according to the URL
-  // I put curly braces around location line 39 then quotes.
+
   let location = useLocation();
   console.log(location.pathname);
 
@@ -43,14 +41,6 @@ function App() {
     <div className="App" style={imageStyle}>
       <Nav />
       <main className="mx-3">
-        {/* <div> */}
-        {/* Think I should remove the value so its consumed after submit */}
-        {/* <input onBlur={handleBlur}  id="name" name= "name" /> 
-    </div>
-    <div> */}
-        {/* Think I should remove the value so its consumed after submit */}
-        {/* <input onBlur={handleBlur} id="password" name= "password" />
-    </div> */}
         <Outlet />
       </main>
       <Footer />
