@@ -65,7 +65,6 @@ const Basic = () => (
             onBlur={handleBlur}
             value={values.message}
           />
-          /* removed password */
           {errors.message && touched.message && errors.message}
           {/* <input
             type="password"
